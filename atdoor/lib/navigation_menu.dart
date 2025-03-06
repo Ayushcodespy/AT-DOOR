@@ -1,4 +1,5 @@
 import 'package:atdoor/features/shop/screens/home/home.dart';
+import 'package:atdoor/features/shop/screens/store/store.dart';
 import 'package:atdoor/utils/constants/colors.dart';
 import 'package:atdoor/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -39,5 +40,5 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [const HomeScreen(), Container(color: Colors.orange,), Container(color: Colors.yellow,), Container(color: Colors.purple,)];
+  final screens = [const HomeScreen(), const StoreScreen(), Container(color: Colors.yellow,), Container(color: Colors.purple,)];
 }
