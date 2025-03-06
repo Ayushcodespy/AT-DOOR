@@ -43,7 +43,7 @@ class TBrandShowcase extends StatelessWidget {
         padding: const EdgeInsets.all(TSizes.sm),
         margin: const EdgeInsets.only(right: TSizes.sm),
         backgroundColor: THelperFunctions.isDarkMode(context) ? TColors.darkerGrey : TColors.light,
-        child: const Image(fit: BoxFit.contain, image: AssetImage(TImages.productImage2)),
+        child: Image(fit: BoxFit.contain, image: AssetImage(image)),
       ),
     );
   }
