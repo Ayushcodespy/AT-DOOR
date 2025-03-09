@@ -2,7 +2,6 @@ import 'package:atdoor/features/authentication/screens/password_configuration/re
 import 'package:atdoor/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constants/sizes.dart';

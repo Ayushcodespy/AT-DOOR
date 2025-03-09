@@ -8,7 +8,6 @@ import 'package:atdoor/utils/constants/sizes.dart';
 import 'package:atdoor/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class FavouriteScreen extends StatelessWidget {
@@ -31,7 +30,7 @@ class FavouriteScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               TGridLayout(itemCount: 4, itemBuilder: (_, index) => const TProductCardVertical())

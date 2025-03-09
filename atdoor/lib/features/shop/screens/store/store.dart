@@ -5,13 +5,11 @@ import 'package:atdoor/common/widgets/products_cart/cart_menu_icon.dart';
 import 'package:atdoor/common/widgets/texts/section_heading.dart';
 import 'package:atdoor/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:atdoor/utils/constants/colors.dart';
-import 'package:atdoor/utils/constants/image_strings.dart';
 import 'package:atdoor/utils/constants/sizes.dart';
 import 'package:atdoor/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/appbar/tabbar.dart';
 import '../../../../common/widgets/brands/brand_card.dart';
-import '../../../../common/widgets/brands/brand_show_case.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
