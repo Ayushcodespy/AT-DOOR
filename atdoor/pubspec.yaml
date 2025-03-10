@@ -27,6 +27,8 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+
+#------------- PACKAGES ----------------#
 dependencies:
   flutter:
     sdk: flutter
@@ -39,17 +41,22 @@ dependencies:
   url_launcher: ^6.3.1
   flutter_native_splash: ^2.4.4
   smooth_page_indicator: ^1.2.0+3
-  carousel_slider: ^5.0.0
 
   # Icons
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.8
 
-  # store management
+  # state management
   get: ^4.6.5
   get_storage: ^2.1.1
 
-  
+  # Product Specific
+  readmore: ^3.0.0
+  carousel_slider: ^5.0.0
+
+
+#------------- PACKAGES ENDS ----------------#
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
