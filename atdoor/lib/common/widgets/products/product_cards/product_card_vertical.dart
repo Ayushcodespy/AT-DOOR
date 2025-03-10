@@ -1,9 +1,12 @@
 import 'package:atdoor/common/widgets/images/t_rounded_image.dart';
 import 'package:atdoor/common/widgets/texts/product_title_text.dart';
+import 'package:atdoor/features/shop/screens/product_details/product_detail.dart';
 import 'package:atdoor/utils/constants/colors.dart';
 import 'package:atdoor/utils/constants/sizes.dart';
 import 'package:atdoor/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constants/image_strings.dart';
@@ -22,7 +25,7 @@ class TProductCardVertical extends StatelessWidget {
 
     /// container with side padding
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
