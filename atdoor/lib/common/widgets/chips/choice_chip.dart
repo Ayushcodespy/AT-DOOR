@@ -32,6 +32,6 @@ class TChoiceChip extends StatelessWidget {
         shape: isColor ? const CircleBorder() : null,
         backgroundColor: isColor ? THelperFunctions.getColor(text)! : null,
       ),
-    ); // ChoiceChip
+    );
   }
 }
