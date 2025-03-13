@@ -2,6 +2,7 @@ import 'package:atdoor/common/widgets/appbar/appbar.dart';
 import 'package:atdoor/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:atdoor/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:atdoor/common/widgets/texts/section_heading.dart';
+import 'package:atdoor/features/personalization/screens/address/address.dart';
 import 'package:atdoor/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -51,7 +52,7 @@ class SettingsScreen extends StatelessWidget {
                       icon: Iconsax.safe_home,
                       title: "My Address",
                       subtitle: "Set shopping delivery address",
-                      onTap: () {}),
+                      onTap: () => Get.to(()=> const UserAddressScreen())),
                   TSettingsMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: "My Cart",
