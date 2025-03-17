@@ -1,7 +1,6 @@
 import 'package:atdoor/common/styles/spacing_styles.dart';
 import 'package:flutter/material.dart';
 import '../../../utils/constants/sizes.dart';
-import '../../../utils/constants/text_strings.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
@@ -26,7 +25,7 @@ class SuccessScreen extends StatelessWidget {
               Text(title, style: Theme.of(context).textTheme.headlineMedium?.copyWith(color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black), textAlign: TextAlign.center),
               const SizedBox(height: TSizes.spaceBtwItems),
 
-              Text(TTexts.yourAccountCreatedSubTitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),
+              Text(subtitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),
               const SizedBox(height: TSizes.spaceBtwSections),
 
               /// Buttons
