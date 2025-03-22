@@ -4,7 +4,12 @@ import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.image, required this.title, required this.subtitle, required this.onPressed});
+  const SuccessScreen(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.subtitle,
+      required this.onPressed});
 
   final String image, title, subtitle;
   final VoidCallback onPressed;
@@ -18,18 +23,30 @@ class SuccessScreen extends StatelessWidget {
           child: Column(
             children: [
               /// Image
-              Image(image: AssetImage(image), width: THelperFunctions.screenWidth() * 0.6),
+              Image(
+                  image: AssetImage(image),
+                  width: THelperFunctions.screenWidth() * 0.6),
               const SizedBox(height: TSizes.spaceBtwSections),
 
               /// Title & Subtitle
-              Text(title, style: Theme.of(context).textTheme.headlineMedium?.copyWith(color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black), textAlign: TextAlign.center),
+              Text(title,
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      color: Theme.of(context).brightness == Brightness.dark
+                          ? Colors.white
+                          : Colors.black),
+                  textAlign: TextAlign.center),
               const SizedBox(height: TSizes.spaceBtwItems),
 
-              Text(subtitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),
+              Text(subtitle,
+                  style: Theme.of(context).textTheme.labelMedium,
+                  textAlign: TextAlign.center),
               const SizedBox(height: TSizes.spaceBtwSections),
 
               /// Buttons
-              SizedBox(width: double.infinity, child: ElevatedButton(onPressed: onPressed, child: const Text("Continue"))),
+              SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                      onPressed: onPressed, child: const Text("Continue"))),
             ],
           ),
         ),
